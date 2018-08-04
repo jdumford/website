@@ -1,0 +1,32 @@
+.nav-background{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 60px;
+    background-color: rgb(29, 146, 255);
+}
+
+#blog-container{
+    width: 100%;
+}
+
+.blog-img-container{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.blog-img{
+    width: 100%;
+}
+
+.blog-body{
+    width: 70%;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.blog-p{
+    margin-top: 20px;
+    
+}

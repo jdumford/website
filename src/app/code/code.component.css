@@ -1,0 +1,9 @@
+.grid{
+    border: solid rgb(35, 223, 10) 10px;
+    color: rgb(35, 223, 10);
+
+}
+
+.grid img{
+    margin-top: 25px;
+}

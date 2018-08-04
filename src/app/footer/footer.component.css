@@ -1,0 +1,44 @@
+#footer-body{
+    padding-top: 60px;
+    text-align: center;
+}
+
+#footer-main{
+    width:80%;
+    min-width: 500px;
+    border-top: solid 1px gray;
+    height: 200px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+#icon-box{
+    width: 400px;
+    align-content: center;
+}
+
+.social-icon{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.reg{
+    width: 50px;
+
+}
+
+.invert{
+    width: 50px;
+    display: none;
+}
+
+#tw-reg{
+    width:64px;
+    margin-right: -5px;
+}
+
+#tw-invert{
+    width:64px;
+    margin-right: -5px;
+    display: none;
+}

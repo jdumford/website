@@ -1,0 +1,32 @@
+#navbar1{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-image: none;
+    background: rgb(255, 255, 255, 0);
+    z-index: 100;
+    padding-top: 15px;
+    text-align: center;
+    color: rgb(255, 255, 255, .9);
+    /* color: rgb(0,0,0,.6); */
+}
+
+.nav-head{
+    font-size: 18pt;
+    display: block;
+    cursor: pointer;
+}
+
+.nav-links{
+    display: block;
+}
+.nav-links{
+    font-size: 18pt;
+    margin-left: 20px;
+    display: inline;
+    cursor: pointer;
+}
+
+/* #navbar li{
+    background-color: rgb(255, 255, 255, 0);
+} */

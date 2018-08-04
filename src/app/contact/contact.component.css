@@ -1,0 +1,24 @@
+#social-container{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.strip-color{
+    background-color:rgb(70, 204, 159);
+    color:white;
+}
+
+.color{
+    color:rgb(70, 204, 159);
+}
+
+.strip-white{
+    color:rgb(70, 204, 159);
+}
+
+.nav-box{
+    color:rgb(70, 204, 159);
+}
+
+.strip li{
+    list-style: none;
+}
