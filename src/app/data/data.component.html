@@ -1,0 +1,111 @@
+<!-- <div class="header">
+    <img class="header-img" src="../../assets/media/data.jpg">
+</div> -->
+
+<mat-tab-group>
+    <mat-tab label="Regionals">
+        <mat-card>
+            <mat-grid-list cols="5" rowHeight="2:1">
+                <mat-grid-tile>
+                    <mat-form-field><mat-select [(value)]="regionalsSchool" (selectionChange)="refreshRegionalsTab()" placeholder="School">
+                        <mat-option value="all">All</mat-option>
+                        <mat-option *ngFor="let s of school" [value]="s">
+                            {{s}}
+                        </mat-option>
+                    </mat-select></mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field><mat-select [(value)]="regionalsEvent" (selectionChange)="refreshRegionalsTab()" placeholder="Event">
+                        <mat-option value="all">All</mat-option>
+                        <mat-option *ngFor="let e of event" [value]="e">
+                            {{e}}
+                        </mat-option>
+                    </mat-select></mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field><mat-select [(value)]="regionalsYear" (selectionChange)="refreshRegionalsTab()" placeholder="Year">
+                        <mat-option value="all">All</mat-option>
+                        <mat-option *ngFor="let y of year" [value]="y">
+                            {{y + 2000}}
+                        </mat-option>
+                    </mat-select></mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field><mat-select [(value)]="regionalsRegion" (selectionChange)="refreshRegionalsTab()" placeholder="Region">
+                        <mat-option value='all'>All</mat-option>
+                        <mat-option value='east'>East</mat-option>
+                        <mat-option value='west'>West</mat-option>
+                    </mat-select></mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-form-field><mat-select [(value)]="regionalsGender" (selectionChange)="refreshRegionalsTab()" placeholder="Gender">
+                            <mat-option value='M'>Men</mat-option>
+                            <mat-option value='W'>Women</mat-option>
+                    </mat-select></mat-form-field>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </mat-card>
+        <mat-card>
+                <mat-list>
+                    <mat-list-item *ngFor="let d of regionalsData">
+                        {{d.school}}: {{d.qualifiers}}
+                    </mat-list-item>
+                </mat-list>
+        </mat-card>
+    </mat-tab>
+    <mat-tab label="NCAAs">
+            <mat-card>
+                <mat-grid-list cols="5" rowHeight="2:1">
+                    <mat-grid-tile>
+                        <mat-form-field><mat-select [(value)]="ncaaSchool" (selectionChange)="refreshNCAATab()" placeholder="School">
+                            <mat-option value="all">All</mat-option>
+                            <mat-option *ngFor="let s of school" [value]="s">
+                                {{s}}
+                            </mat-option>
+                        </mat-select></mat-form-field>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <mat-form-field><mat-select [(value)]="ncaaEvent" (selectionChange)="refreshNCAATab()" placeholder="Event">
+                            <mat-option value="all">All</mat-option>
+                            <mat-option *ngFor="let e of event" [value]="e">
+                                {{e}}
+                            </mat-option>
+                        </mat-select></mat-form-field>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <mat-form-field><mat-select [(value)]="ncaaYear" (selectionChange)="refreshNCAATab()" placeholder="Year">
+                            <mat-option value="all">All</mat-option>
+                            <mat-option *ngFor="let y of year" [value]="y">
+                                {{y + 2000}}
+                            </mat-option>
+                        </mat-select></mat-form-field>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <mat-form-field><mat-select [(value)]="ncaaRound" (selectionChange)="refreshNCAATab()" placeholder="Criteria">
+                            <mat-option value='qualify'>Qualifiers</mat-option>
+                            <mat-option value='final'>Finalists</mat-option>
+                            <mat-option value='aa'>All-Americans</mat-option>
+                            <mat-option value='champ'>NCAA Champions</mat-option>
+                        </mat-select></mat-form-field>
+                    </mat-grid-tile>
+                    <mat-grid-tile>
+                        <mat-form-field><mat-select [(value)]="ncaaGender" (selectionChange)="refreshNCAATab()" placeholder="Gender">
+                                <mat-option value='M'>Men</mat-option>
+                                <mat-option value='W'>Women</mat-option>
+                        </mat-select></mat-form-field>
+                    </mat-grid-tile>
+                </mat-grid-list>
+            </mat-card>
+            <mat-card>
+                    <mat-list>
+                        <mat-list-item *ngFor="let d of ncaaData">
+                            {{d.school}}: {{d.qualifiers}}
+                        </mat-list-item>
+                    </mat-list>
+            </mat-card>
+        </mat-tab>
+</mat-tab-group>
+
+
+
+

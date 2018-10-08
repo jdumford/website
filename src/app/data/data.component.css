@@ -1,0 +1,17 @@
+mat-card{
+    width: 80%;
+    margin: 20px auto;
+}
+
+mat-grid-list{
+    width: 100%;
+}
+
+mat-form-field{
+    max-width: 90%;
+}
+
+mat-tab-group{
+    margin: 50px auto;
+    width: 90%;
+}

@@ -7,6 +7,7 @@ import { PhotosComponent } from './photos/photos.component';
 import { ContactComponent } from './contact/contact.component';
 import { MyStoryComponent } from './my-story/my-story.component';
 import { CodeComponent } from './code/code.component';
+import { DataComponent } from './data/data.component';
 
 const routes: Routes = [
     {
@@ -36,6 +37,10 @@ const routes: Routes = [
     {
         path: 'code',
         component: CodeComponent
+    },
+    {
+        path: 'data',
+        component: DataComponent
     }
 ];
 
